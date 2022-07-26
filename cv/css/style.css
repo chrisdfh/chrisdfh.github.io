@@ -1,0 +1,19 @@
+body{
+    background-image: url(../img/main_bg.png);
+    background-color: lightblue;
+    min-height: 100vh;
+    display: block;
+}
+.row.bg-color{
+    border-radius: 10px;
+    background: linear-gradient(#0b7080,#0ba376);
+    color:white;
+}
+.m0a{
+    margin: 0 auto;
+}
+.img-container img{
+    border-radius: 50%;
+    border:5px solid white;
+}
+.titulo
