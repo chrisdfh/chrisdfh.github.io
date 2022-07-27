@@ -116,6 +116,20 @@
     .year {
         white-space:nowrap;
     }
+    .header-photo{
+        width:240px;
+        max-width: calc(100% - 20px);
+    }
+
+    i{
+        position:relative;
+    }
+    i::before{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
     @media (min-width:576px){
         .container{max-width: unset};
     }
@@ -137,7 +151,7 @@
     <div class="container pt-5 pb-5">
         <div class="row bg-color radius">
             <div class="col-3  pt-4 pb-4">
-                <div class="profile-pic">
+                <div class="profile-pic header-photo">
                     <img src="./img/cv-pic.png" alt="">
                 </div>
                 <div class="name text-center pt-4 pb-4">
