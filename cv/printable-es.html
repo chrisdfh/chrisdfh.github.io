@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/cv/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Christian De Freitas</title>
+</head>
+<style>
+    body{
+        overflow: auto;
+    }
+    .bg-white{
+        color:#777;
+    }
+    .bg-grey{
+        background-image: url("img/main_bg.png");
+        /* min-height: 100vh; */
+        display: block;
+    }
+    .bg-color{
+        background: linear-gradient(#0b7080,#0ba376);
+        color:white;
+    }
+    .profile-pic img{
+        aspect-ratio: 1/1;
+        border-radius:50%;
+        border:2px solid #0b7080;
+    }
+    .radius{
+        border-radius: 25px;
+    }
+    .title-info i{
+        font-size: 24px;
+        background-color: white;
+        color:grey;
+        border-radius: 50%;
+        border:2px solid grey;
+        padding:10px;
+        height:48px;
+        width: 48px;
+        text-align: center;
+    }
+    .title-info .dato span{
+        font-weight: bold;
+    }
+    .title-info .title{
+        color:white;
+        font-size:20px;
+        font-family: poppins,Helvetica,sans-serif;
+        font-weight: 600;
+    }
+    .bg-white .title-info .title{
+        color:#0b7080;
+        font-size:20px;
+        font-family: poppins,Helvetica,sans-serif;
+        font-weight: 600;
+    }
+    .title-info .title{
+        position:relative;
+    }
+    .bg-white .title-info .title::before,.bg-white .title-info .title::after{
+        content:"";
+        width:25%;
+        background-color: #0b7080;
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        bottom:4px;
+    }
+    .title-info .title::before,.title-info .title::after{
+        content:"";
+        width:20px;
+        background-color: white;
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        bottom:4px;
+    }
+    .skill.clearfix h4{
+        color:white
+    }
+    .skills-second-style .skill-percentage{
+        background-color: hsl(162deg 87% 25%);
+    }
+    .skill-value{
+        color:white !important;
+    }
+    .jobsite{
+        padding-top:15px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
+    }
+    .jobsite .detail{
+        font-size: 0.8em;
+        line-height: 1.3;
+    }
+    .jobsite span{
+        font-weight: 500;
+    }
+    .job-items li{
+        line-height: 1.2;
+    }
+    .job-description span{
+        color:darkslategray;
+        font-weight: 500;
+    }
+    .year {
+        white-space:nowrap;
+    }
+    @media (min-width:576px){
+        .container{max-width: unset};
+    }
+    @media (min-width:768px){
+        .container{max-width: unset};
+    }
+    @media (min-width:992px){
+        .container{max-width: 960px};
+    }
+    @media (min-width:1200px){
+        .container{max-width: 1140px};
+    }
+    @media (min-width:1400px){
+        .container{max-width: 1320px};
+    }
+
+</style>
+<body class="bg-grey">
+    <div class="container pt-5 pb-5">
+        <div class="row bg-color radius">
+            <div class="col-3  pt-4 pb-4">
+                <div class="profile-pic">
+                    <img src="./img/cv-pic.png" alt="">
+                </div>
+                <div class="name text-center pt-4 pb-4">
+                    <h2 class="text-white">Christian De Freitas</h2>
+                </div>
+                <div class="titles text-center ">
+                    <div class="title">
+                        <h4 class="text-white">Desarrollador Web</h4> 
+                    </div>
+                    <div class="title text-white">
+                        <h4 class="text-white">Ingeniero Mecánico</h4>
+                    </div>
+                </div>
+
+                <div class="title-info text-center pt-4">
+                    <i class="fa-regular fa-address-card"></i>
+                    <div class="title">
+                        Inf. Personal
+                    </div>
+                    <div class="dato">
+                        <span>Fecha de Nac</span>: 06 de Nov 1980
+                    </div>
+                    <div class="dato">
+                        <span>C.I.</span>: V-15.631.160
+                    </div>
+                    <div class="dato">
+                        <span>
+                            C.I.V.
+                        </span>
+                        191.581
+                    </div>
+                </div>
+                <div class="title-info text-center pt-4">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="title">
+                        Contacto
+                    </div>
+                    <div class="dato">
+                        Av. J.A. Paez, Edf. Chuchube, Piso 2 Apto 22, Flores de Puente Hierro. Caracas Venezuela
+                    </div>
+                    <div class="dato">
+                        +58 412 2841442
+                    </div>
+                    <div class="dato">
+                        +58 212 5456038
+                    </div>
+                    <div class="dato">
+                        defreitas.christian@gmail.com
+                    </div>
+                </div>
+                <div class="title-info text-center pt-4">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <div class="title">
+                        Destrezas
+                    </div>
+                </div>
+
+                <div class="skills-info skills-second-style pt-4">
+                    <div class="skill clearfix">
+                      <h4>Idioma Inglés (Nativo)</h4>
+                      <div class="skill-value">95%</div>
+                    </div>
+                    <div class="skill-container skill-1">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>HTML/CSS</h4>
+                      <div class="skill-value">95%</div>
+                    </div>
+                    <div class="skill-container skill-1">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Mecánica Industrial</h4>
+                      <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container skill-4">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Procesos Químicos Industriales</h4>
+                      <div class="skill-value">80%</div>
+                    </div>
+                    <div class="skill-container skill-3">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+
+                    <div class="skill clearfix">
+                      <h4>Electricidad Industrial</h4>
+                      <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container skill-4">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>DOM Manipulation</h4>
+                      <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container skill-4">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Use API For Dynamism</h4>
+                      <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container skill-4">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+
+                    <!-- Skill 5 -->
+                    <div class="skill clearfix">
+                        <h4>JavaScript</h4>
+                        <div class="skill-value">95%</div>
+                    </div>
+                    <div class="skill-container skill-5">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 5 -->
+
+                    <!-- Skill 6 -->
+                    <div class="skill clearfix">
+                        <h4>PHP</h4>
+                        <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container skill-4">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 6 -->
+
+                    <!-- Skill 6 -->
+                    <div class="skill clearfix">
+                        <h4>JAVA</h4>
+                        <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container skill-4">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    
+                    <!-- Skill 7 -->
+                    <div class="skill clearfix">
+                        <h4>HTML/CSS</h4>
+                        <div class="skill-value">95%</div>
+                    </div>
+                    <div class="skill-container skill-5">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 7 -->
+                    
+                    <!-- Skill 8 -->
+                    <div class="skill clearfix">
+                        <h4>Angular</h4>
+                        <div class="skill-value">75%</div>
+                    </div>
+                    <div class="skill-container skill-8">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 8 -->
+
+                    <div class="skill clearfix">
+                        <h4>Python</h4>
+                        <div class="skill-value">80%</div>
+                    </div>
+                    <div class="skill-container skill-3">
+                        <div class="skill-percentage"></div>
+                    </div>
+                    <!-- End of Skill 8 -->
+
+                  </div>
+
+
+            </div>
+            <div class="col-9 bg-white pt-4 radius ps-5 pe-5 pb-4">
+
+                <div class="title-info text-center pt-4">
+                    <i class="fa-solid fa-city"></i>
+                    <div class="title">
+                        Experiencia Laboral
+                    </div>
+                </div>
+                <div class="jobsite">
+                    <div class="company">
+                        Campusxity International C.A.
+                    </div>
+                    <div class="year">
+                        2018 - Actual
+                    </div>
+                </div>
+                <div class="job-description ps-3 pe-3">
+                    Programador JAVA/PHP/JS/GoLang/SQL - Desarrollador Web
+                </div>
+                <div class="job-description ps-3 pe-3">
+                    <span>Supervisor</span> Presidente, Carlos Serra +58 414 2391521
+                </div>
+                <div class="job-items ps-4 pe-4">
+                    <ul>
+                        <li>Crear Programas utilizando la lógica de negocios entregada por el cliente</li>
+                        <li>Manejar BD PostgreSQL y presentarla al usuario mediante páginas Web</li>
+                        <li>Crear Interfaces front-end para manejo de BD</li>
+                        <li>Crear endpoints CRUD usando JAVA/GoLang</li>
+                        <li>Desarrollar Páginas Web según propuesta entregada por diseñador (PHP/HTML/CSS/JS)</li>
+                        <li>Instalación, configuración, administración y mantenimiento de servidores con infraestructura GNU/Linux</li>
+                        <li>Instalación y configuración de Nginx / Apache o combinación de ambos</li>
+                        <li>Instalación y configuración de apps/servicios vía docker</li>
+                    </ul>
+                </div>
+
+
+                <div class="jobsite">
+                    <div class="company">
+                        Quimbiotec C.A.
+                    </div>
+                    <div class="year">
+                        2008 - 2018
+                    </div>
+                </div>
+                <div class="job-description ps-3 pe-3">
+                    <span>Último Cargo</span>: Gerente Técnico de Mtto. Infraestructura y Nuevas Tecnologías
+                </div>
+                <div class="job-description ps-3 pe-3">
+                    <span>Supervisor</span> Gerente de Mtto, Pedro Guerra +58 212 7000443
+                </div>
+                <div class="job-items ps-4 pe-4">
+                    <ul>
+                        <li>Ejecutar labores de supervisión para administrar y coordinar los planes de mantenimiento preventivo de las instalaciones, sistemas y equipos de las plantas productoras</li>
+                        <li>Administrar y coordinar la planificación para la ejecución de trabajos de mantenimientos peventivos y correctivos</li>
+                        <li>Establecer el plan de adiestramiento del personal</li>
+                        <li>Coordinar y realizar entrenamientos sobre los Procedimientos de Operación Estándar de la empresa</li>
+                    </ul>
+                </div>
+
+
+                <div class="jobsite">
+                    <div class="company">
+                        Industrias Pollo Premium C.A.
+                    </div>
+                    <div class="year">
+                        2007 - 2008
+                    </div>
+                </div>
+                <div class="job-description ps-3 pe-3">
+                    <span>Último Cargo</span>: Supervisor de Mantenimiento en Planta
+                </div>
+                <div class="job-description ps-3 pe-3">
+                    <span>Supervisor</span> Gerente General, Mauricio Pestana +58 212 3234698
+                </div>
+                <div class="job-items ps-4 pe-4">
+                    <ul>
+                        <li>Supervisar personal del departamento de Mantenimiento</li>
+                        <li>Creaciones de manuales y planes de mantenimiento productivo/correctivo</li>
+                        <li>Encargado de diseñar/revisar y ejecutar proyectos especiales</li>
+                    </ul>
+                </div>
+
+
+                <div class="jobsite">
+                    <div class="company">
+                        Mini Bruno Sucesores
+                    </div>
+                    <div class="year">
+                        2006 - 2007
+                    </div>
+                </div>
+                <div class="job-description ps-3 pe-3">
+                    <span>Último Cargo</span>: Pasante / Supervisor de planta
+                </div>
+                <div class="job-description ps-3 pe-3">
+                    <span>Supervisor</span> Gerente de Producción, Wilky Santander +58 212 4335895
+                </div>
+                <div class="job-items ps-4 pe-4">
+                    <ul>
+                        <li>Proyecto de pasantía: Diseño e instalación de un tanque para preparar y dosificar antioxidante a la línea de producción de harina protéica</li>
+                        <li>Supervisor de planta #2 (Planta encargada de la elaboración de la harina protéica</li>
+                    </ul>
+                </div>
+                
+
+
+                <div class="title-info text-center pt-4">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div class="title">
+                        Educación
+                    </div>
+                </div>                
+                <div class="jobsite">
+                    <div class="company">
+                        Fondonorma
+                        <div class="detail">
+                            Diplomado de Sistemas de Gestión de la Calidad ISO 9001:2008
+                        </div>
+                        <div class="detail">
+                            <span>Titulo Obtenido:</span> Auditor Interno ISO 9000
+                        </div>
+                    </div>
+                    <div class="year">
+                        2015
+                    </div>
+                </div>              
+                <div class="jobsite">
+                    <div class="company">
+                        Universidad Nacional Experimental Politécnica "Antonio José de Sucre"
+                        <div class="detail">
+                            Ingeniería Mecánica
+                        </div>
+                        <div class="detail">
+                            <span>Titulo Obtenido:</span> Ingeniero Mecánico
+                        </div>
+                    </div>
+                    <div class="year">
+                        1999 - 2006
+                    </div>
+                </div>             
+                <div class="jobsite">
+                    <div class="company">
+                        Unidad Educativa Nacional "Gustavo Herrera"
+                        <div class="detail">
+                            Educación Básica
+                        </div>
+                        <div class="detail">
+                            <span>Titulo Obtenido:</span> Bachiller en Ciencias
+                        </div>
+                    </div>
+                    <div class="year">
+                        1993 - 1998
+                    </div>
+                </div>
+
+
+                <div class="title-info text-center pt-4">
+                    <i class="fa-solid fa-school"></i>
+                    <div class="title">
+                        Cursos Realizados
+                    </div>
+                </div>                
+                <div class="jobsite">
+                    <ul>
+                        <li>Buenas prácticas de manufactura para la industria farmaceútica</li>
+                        <li>Planificación en Mantenimiento</li>
+                        <li>Liderazgo</li>
+                        <li>Logística en planta</li>
+                        <li>AutoCAD Básico / Intermedio</li>
+                        <li>Programación
+                            <ul>
+                                <li>JAVA</li>
+                                <li>Front-end Developer (HTML/PHP/CSS/JS)</li>
+                                <li>Mantenimiento de Infraestructura en servidores GNU/Linux</li>
+                                <li>Servidores Web usando Nginx/Apache</li>
+                                <li>SQL Básico/Intermedio</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>          
+            </div>
+        </div>
+    </div>
+</body>
+</html>
